@@ -12,19 +12,20 @@ namespace AppWin2.NewFolder
         public string LastName { get; set; }
         public string Subject { get; set; }
         public string Level { get; set; }
-        private int Money { get; set; }
+        public int Id { get; set; }
 
         public Teacher()
         {
 
         }
 
-        public Teacher(string firstname, string lastname, string subject, string level )
+        public Teacher(string firstname, string lastname, string subject, string level, int id )
         {
             this.FirstName = firstname;
             this.LastName = lastname;
             this.Level = level;
             this.Subject = subject;
+            this.Id = id;
         }
     }
 }
